@@ -6,7 +6,7 @@ void setup(){
     background(51);  
   time  = millis(); //<>//
   PVector mag = new PVector(0.0 , 0.0 ,-0.05); //<>//
-  o = new Object(width/2 , 20 , 0.05 , 0.0 , mag);
+  o = new Object(width/2 , 50 , 0.05 , 0.0 , mag);
 }
 
 void draw(){
@@ -14,10 +14,10 @@ void draw(){
 
   
    for(int i = 0; i < 100; i++){
-     previous_time = time;
-     time = millis(); //<>//
-     int dt = time - previous_time; //<>//
-     o.updateByTime(dt/10); //<>//
+     //previous_time = time;
+     //time = millis(); //<>//
+     float dt = 0.01; //<>//
+     o.updateByTime(dt); //<>//
    }
   //o.update();
   o.display(); //<>//

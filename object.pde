@@ -26,7 +26,7 @@ class Object{
     acceleration.mult(0); //<>//
     //velocity.limit(7);
   }
-  void updateByTime(int dt){
+  void updateByTime(float dt){
     applyMagneticForce(); //<>//
     acceleration.mult(dt); //<>//
     velocity.add(acceleration); //<>//
